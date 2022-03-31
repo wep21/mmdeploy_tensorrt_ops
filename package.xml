@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>mmdeploy_tensorrt_plugins</name>
+  <version>0.0.1</version>
+  <description>
+    The meta package to create mmdeploy tensorrt plugins
+  </description>
+
+  <author email="daisuke.nishimatsu@tier4.jp">Daisuke Nishimatsu</author>
+  <maintainer email="daisuke.nishimatsu@tier4.jp">Daisuke Nishimatsu</maintainer>
+
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>git</buildtool_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

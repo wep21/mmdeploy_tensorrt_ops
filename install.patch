@@ -1,0 +1,16 @@
+diff --git a/csrc/backend_ops/tensorrt/CMakeLists.txt b/csrc/backend_ops/tensorrt/CMakeLists.txt
+index 796a600..4185b76 100644
+--- a/csrc/backend_ops/tensorrt/CMakeLists.txt
++++ b/csrc/backend_ops/tensorrt/CMakeLists.txt
+@@ -35,3 +35,11 @@ mmdeploy_export(${PROJECT_NAME}_obj)
+ mmdeploy_add_module(${PROJECT_NAME} MODULE EXCLUDE "")
+ target_link_libraries(${PROJECT_NAME} PRIVATE ${PROJECT_NAME}_obj)
+ add_library(mmdeploy::tensorrt_ops ALIAS ${PROJECT_NAME})
++
++install(
++  TARGETS ${PROJECT_NAME}
++  EXPORT ${PROJECT_NAME}
++  ARCHIVE DESTINATION lib
++  LIBRARY DESTINATION lib
++  RUNTIME DESTINATION bin
++)
