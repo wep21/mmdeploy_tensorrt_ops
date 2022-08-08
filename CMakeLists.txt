@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(mmdeploy_tensorrt_plugins)
+project(mmdeploy_tensorrt_ops)
 
 find_package(ament_cmake REQUIRED)
 find_package(tensorrt_cmake_module REQUIRED)

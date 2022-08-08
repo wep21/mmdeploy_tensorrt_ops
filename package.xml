@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package format="3">
-  <name>mmdeploy_tensorrt_plugins</name>
+  <name>mmdeploy_tensorrt_ops</name>
   <version>0.0.1</version>
   <description>
-    The meta package to create mmdeploy tensorrt plugins
+    The meta package to create mmdeploy tensorrt ops
   </description>
 
   <author email="daisuke.nishimatsu@tier4.jp">Daisuke Nishimatsu</author>
