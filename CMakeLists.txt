@@ -17,10 +17,10 @@ list(APPEND extra_cmake_args -DTENSORRT_DIR=${TENSORRT_ROOT})
 
 include(ExternalProject)
 
-externalproject_add(mmdeploy-v0.7.0
+externalproject_add(mmdeploy-v1.3.0
   GIT_REPOSITORY https://github.com/open-mmlab/mmdeploy.git
-  GIT_TAG 83b11bc1ca7227497928a57b56653b76501b1368
-  PREFIX mmdeploy-v0.7.0
+  GIT_TAG 1132e827d73b308f04c6d636298ff3a7094c585a
+  PREFIX mmdeploy-v1.3.0
   TIMEOUT 600
   CMAKE_ARGS
     ${extra_cmake_args}
@@ -28,7 +28,7 @@ externalproject_add(mmdeploy-v0.7.0
     # git apply ${CMAKE_CURRENT_SOURCE_DIR}/install.patch
 )
 
-externalproject_get_property(mmdeploy-v0.7.0 BINARY_DIR)
+externalproject_get_property(mmdeploy-v1.3.0 BINARY_DIR)
 
 # The external project will install to the build folder, but we'll install that on make install.
 install(
